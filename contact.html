@@ -18,13 +18,13 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     >
       <h1 class="text-2xl">Greenden</h1>
 
-      <svg
+      <svg id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 md:hidden"
+        class="w-6 md:hidden inline cursor-pointer"
       >
         <path
           stroke-linecap="round"
@@ -33,7 +33,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         />
       </svg>
 
-      <ul class="flex hidden gap-5 text-gray-700 md:flex">
+      <ul class="hidden gap-5 text-gray-700 md:flex">
         <li>
           <a class="hover:underline hover:text-black" href="index.html">Home</a>
         </li>
@@ -52,13 +52,40 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
       </ul>
     </nav>
 
+    <div
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0"
+      style="width: 50%; height: 100vb; right: -50%"
+    >
+      <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-700">
+        <li>
+          <a class="hover:underline hover:text-black" href="">Home</a>
+        </li>
+
+        <li>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Prducts</a
+          >
+        </li>
+
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <section
       id="contact"
       class="py-12 bg-gray-100 flex justify-center items-center"
     >
       <div class="container mx-auto px-4 w-full md:w-2/3 lg:w-1/2">
         <div
-          class="bg-white shadow-md rounded border-2 border-solid border-green-600 rounded-lg p-5 w-3/4"
+          class="bg-white shadow-md border-2 border-solid border-green-600 rounded-lg p-5 w-3/4"
         >
           <h3 class="text-3xl mb-8 text-green-400 p-4 justify-center">
             Contact Us
@@ -155,5 +182,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
       </p>
       <p>@ 2024 Greenden.com</p>
     </div>
+
+    <script src="contact.js"></script>
   </body>
 </html>

@@ -19,12 +19,13 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
       <h1 class="text-2xl">Greenden</h1>
 
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 md:hidden"
+        class="w-6 md:hidden inline cursor-pointer"
       >
         <path
           stroke-linecap="round"
@@ -33,27 +34,60 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         />
       </svg>
 
-      <ul class="flex gap-5 text-gray-700 hidden md:flex">
+      <ul class="gap-5 text-gray-700 hidden md:flex">
         <li>
           <a class="hover:underline hover:text-black" href="">Home</a>
         </li>
 
         <li>
-          <a class="hover:underline hover:text-black" href="product.html">Prducts</a>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Prducts</a
+          >
         </li>
 
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
+
+    <div
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0"
+      style="width: 50%; height: 100vb; right: -50%"
+    >
+      <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-700">
+        <li>
+          <a class="hover:underline hover:text-black" href="">Home</a>
+        </li>
+
+        <li>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Prducts</a
+          >
+        </li>
+
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <div class="bg-green-100 p-4 md:p-10 flex justify-center">
       <div>
         <p class="mb:4">
           We offer you a wide range of Artifical and Natural Flowers
         </p>
-        <h2 class="font-bold text-3xl md:text-5xl mb-5">Plants for your Interior</h2>
+        <h2 class="font-bold text-3xl md:text-5xl mb-5">
+          Plants for your Interior
+        </h2>
         <div>
           <button class="bg-black rounded p-2 text-white">Shope Now</button>
           <button class="border border-black rounded p-2">Watch Video</button>
@@ -233,8 +267,15 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
     <div class="text-center">
       <h1 class="text-2xl font-bold">Join our News Letter</h1>
-      <p>Signup for our email newspaper to get exclusive discounts updates, and more</p>
-      <input type="text" class="border border-black p-2 m-5" style="width: 80%;">
+      <p>
+        Signup for our email newspaper to get exclusive discounts updates, and
+        more
+      </p>
+      <input
+        type="text"
+        class="border border-black p-2 m-5"
+        style="width: 80%"
+      />
       <div>
         <button class="bg-black text-white p-2 m-1 underline">Subscribe</button>
       </div>
@@ -242,8 +283,14 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
     <div class="p-10 bg-green-100 flex flex-col gap-5">
       <h1 class="text-3xl font-medium">Greenden</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit maiores accusamus expedita delectus inventore? Perferendis repellat pariatur atque accusamus labore.</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+        maiores accusamus expedita delectus inventore? Perferendis repellat
+        pariatur atque accusamus labore.
+      </p>
       <p>@ 2024 Greenden.com</p>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
